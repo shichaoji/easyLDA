@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: easyLDA
+Version: 0.0.2
+Summary: easily bult LDA Topic Models with just a list of docs (e.g. a list of twitter posts in CSV/TXT
+Home-page: https://github.com/shichaoji/easyLDA
+Author: Shichao(Richard) Ji
+Author-email: jshichao@vt.edu
+License: MIT
+Download-URL: https://github.com/shichaoji/easyLDA/archive/0.1.tar.gz
+Description-Content-Type: UNKNOWN
+Description: easily bult LDA Topic Models with just a list of docs (e.g. a list of twitter posts in CSV/TXT
+        
+Keywords: topic model,LDA,easy,text mining,natual language processing
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
