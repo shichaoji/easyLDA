@@ -186,6 +186,8 @@ class PipelineLDA(object):
 
 def main():
     path = raw_input('the PATH of the csv file with just one column and each row should be one document: ')
+    topics = int(str(raw_input('how many topics would you like to fit in your model?: ')).strip())
+    
     print '1/7: load file'
     lda = PipelineLDA(path)
     print '2/7: preprocessing docs'
@@ -195,7 +197,7 @@ def main():
     print '4/7: create doc corpus'
     lda.create_corpus()
     print '5/7: train LDA model'
-    lda.train()
+    lda.train(num_topics = topics)
     print '6/7: save trained LDA model'
     lda.save()
     print '7/7: visualize LDA model result'
