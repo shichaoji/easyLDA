@@ -2,12 +2,16 @@
 
 
 
+
 import sys
 try:
     reload(sys)
     sys.setdefaultencoding("utf-8")
 except:
     print('python3')
+    
+    
+    
     
 import pandas as pd
 from time import time, ctime
@@ -48,7 +52,7 @@ class PipelineLDA(object):
     def __init__(self, path):
         global logging
         self.path = path
-        self.name = self.path.split('.')[0]
+        self.name = self.path.split('.')[-2].split('/')[-1]
         self.df =  pd.read_csv(self.path)
         print self.df.shape
         try:
@@ -68,7 +72,7 @@ class PipelineLDA(object):
         
         
     def clean(self, article):
-        article = str(article)
+        article = str(article).decode('unicode_escape').encode('utf-8')
         zero = "".join(i for i in article if i not in punctuation)
 
         one = " ".join([i for i in zero.lower().split() if i not in stopwords])

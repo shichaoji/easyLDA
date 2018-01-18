@@ -1,3 +1,11 @@
+# coding: utf-8
+import sys
+try:
+    reload(sys)
+    sys.setdefaultencoding("utf-8")
+except:
+    print('python3')
+    
 try:
     import nltk
     nltk.download("stopwords")
