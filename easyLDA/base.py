@@ -185,4 +185,4 @@ def main():
     lda.save()
     print '6/6: visualize LDA model result'
     lda.visualize()
-    pritn 'done'
+    print 'done'

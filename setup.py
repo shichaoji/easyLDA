@@ -1,3 +1,4 @@
+#! /usr/bin/python
 from setuptools import setup, find_packages
 
 import os
@@ -28,7 +29,7 @@ with open(os.path.join(_HERE, 'README.rst'),'r+') as fh:
 
 setup(
     name = "easyLDA",
-    version = "0.0.2",
+    version = "0.0.5",
     description = "easily bult LDA Topic Models with just a list of docs (e.g. a list of twitter posts in CSV/TXT",
     long_description = long_description,
     author = "Shichao(Richard) Ji",
@@ -42,7 +43,6 @@ setup(
         'Programming Language :: Python :: 2',
         ],
     packages = find_packages(),
-    cmdclass={'install': Install},
     install_requires=[
         'nltk',
         'gensim',
@@ -52,5 +52,11 @@ setup(
     entry_points={
         'console_scripts': ['easyLDA=easyLDA:main'],
       },
+#    cmdclass={'install': Install},
 )
 
+#import sys
+#if 'install' in sys.argv:
+#    print 'download nltk stopwords'
+#    import nltk
+#    nltk.download("stopwords")
