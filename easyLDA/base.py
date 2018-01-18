@@ -47,9 +47,10 @@ class PipelineLDA(object):
     
     def __init__(self, path):
         global logging
+        self.path = path
         self.name = self.path.split('.')[0]
-        self.df =  pd.read_csv(path)
-        print self.shape
+        self.df =  pd.read_csv(self.path)
+        print self.df.shape
         try:
             self.series = self.df['text']
         except:
@@ -172,17 +173,19 @@ class PipelineLDA(object):
         
 
 def main():
-    path = raw_input('the PATH of the csv file with just one column and each row should be one document')
-    print '1/6: load file'
+    path = raw_input('the PATH of the csv file with just one column and each row should be one document: ')
+    print '1/7: load file'
     lda = PipelineLDA(path)
-    print '2/6: create doc dictionary'
+    print '2/7: preprocessing docs'
+    lda.split()
+    print '3/7: create doc dictionary'
     lda.create_dictionary()
-    print '3/6: create doc corpus'
+    print '4/7: create doc corpus'
     lda.create_corpus()
-    print '4/6: train LDA model'
+    print '5/7: train LDA model'
     lda.train()
-    print '5/6: save trained LDA model'
+    print '6/7: save trained LDA model'
     lda.save()
-    print '6/6: visualize LDA model result'
+    print '7/7: visualize LDA model result'
     lda.visualize()
     print 'done'
