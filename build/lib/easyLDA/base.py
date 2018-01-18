@@ -72,13 +72,21 @@ class PipelineLDA(object):
         
         
     def clean(self, article):
-        article = str(article).decode('unicode_escape').encode('utf-8')
+        
+        try:
+            article = str(article).decode('unicode_escape').encode('utf-8')
+        except:
+            article = str(article)
+
         zero = "".join(i for i in article if i not in punctuation)
 
         one = " ".join([i for i in zero.lower().split() if i not in stopwords])
 
-        three = " ".join(lemmatize.lemmatize(i) for i in one.split())
-        return three        
+        try:
+            three = " ".join(lemmatize.lemmatize(i) for i in one.split())
+        except:
+            three = " ".join(lemmatize.lemmatize(i.decode('unicode_escape').encode('utf-8')) for i in one.split())
+        return three
     
     def split(self, n_gram=1):
         start = time()
