@@ -79,7 +79,7 @@ class PipelineLDA(object):
     def split(self, n_gram=1):
         start = time()
 
-        ap_text = self.series.apply(clean)
+        ap_text = self.series.apply(self.clean)
         ap_text_list = [i.split() for i in ap_text]
         print (len(ap_text_list))
 

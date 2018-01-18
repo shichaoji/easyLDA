@@ -1,6 +1,7 @@
 try:
     import nltk
     nltk.download("stopwords")
+    nltk.download("wordnet")
 except:
     'stopword data downloaded already'
     
