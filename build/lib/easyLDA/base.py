@@ -187,11 +187,12 @@ class PipelineLDA(object):
 def main():
     path = raw_input('the PATH of the csv file with just one column and each row should be one document: ')
     topics = int(str(raw_input('how many topics would you like to fit in your model?: ')).strip())
+    n_gram = int(str(raw_input('word topics or phase topics 1-word, 2-phase, 3-long phase? (1/2/3): ')).strip())
     
     print '1/7: load file'
     lda = PipelineLDA(path)
     print '2/7: preprocessing docs'
-    lda.split()
+    lda.split(n_gram=n_gram)
     print '3/7: create doc dictionary'
     lda.create_dictionary()
     print '4/7: create doc corpus'

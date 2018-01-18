@@ -29,7 +29,7 @@ with open(os.path.join(_HERE, 'README.rst'),'r+') as fh:
 
 setup(
     name = "easyLDA",
-    version = "0.1.2",
+    version = "0.1.3",
     description = "easily bult LDA Topic Models with just a list of docs (e.g. a list of twitter posts in CSV/TXT",
     long_description = long_description,
     author = "Shichao(Richard) Ji",
