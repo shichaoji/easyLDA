@@ -143,18 +143,18 @@ class PipelineLDA(object):
                         passes=passes
                       )
         
-        'used: {:.2f}s'.format(time()-start)        
+        print 'used: {:.2f}s'.format(time()-start)        
         
     def save(self):
         start = time()
         self.ldamodel.save(self.name+'_lda.model')
-        'used: {:.2f}s'.format(time()-start)
+        print 'used: {:.2f}s'.format(time()-start)
         
     def load(self, path):
         start = time()
         loading = gensim.models.ldamodel.load(path)
         self.ldamodel=loading
-        'used: {:.2f}s'.format(time()-start)
+        print 'used: {:.2f}s'.format(time()-start)
         
     def visualize(self):
         import pyLDAvis
