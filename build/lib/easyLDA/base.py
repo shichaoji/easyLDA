@@ -106,11 +106,16 @@ class PipelineLDA(object):
             self.prepared = new_bi_list
 
         else:
+            phs = Phrases(ap_text_list)
+            bi_gram = Phraser(phs)
+            new_bi_list = [bi_gram[i] for i in ap_text_list]
+                        
+            
             phs3=Phrases(new_bi_list)
             tri_gram=Phraser(phs3)
-            new_tri_list = [tri_gram[i] for i in new_bi_list]
+            new_tri_list2 = [tri_gram[i] for i in new_bi_list]
 
-            self.prepared=new_tri_list
+            self.prepared=new_tri_list2
 
 
             
