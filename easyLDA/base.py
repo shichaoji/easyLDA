@@ -49,13 +49,14 @@ class PipelineLDA(object):
     
     """
     
-    def __init__(self, path, topics, grams):
+    def __init__(self, path, topics, grams, passes=1):
         
         global logging
         try:
             mkdir('model')
         except:
             print 'model dir exists'
+        self.passes=passes
         self.folder = './model/'
         self.path = path
         self.topics = topics
@@ -71,7 +72,7 @@ class PipelineLDA(object):
         self.stop = stopwords
         self.stop.update(stop)
         logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO,
-                            filename=folder+self.name+'_log.log'.format(self.name),filemode='w')
+                            filename=self.folder+self.name+'_log.log'.format(self.name),filemode='w')
             
     def addstop(self, wordlist):
         self.stop.update(set(wordlist))
@@ -132,7 +133,7 @@ class PipelineLDA(object):
         # Creating the term dictionary of our courpus, where every unique term is assigned an index. dictionary = corpora.Dictionary(doc_clean)
         start = time()
         self.dictionary = corpora.Dictionary(self.prepared)
-        self.dictionary.save(folder+self.name+'_dict.dict')
+        self.dictionary.save(self.folder+self.name+'_dict.dict')
         print (len(self.dictionary))
         print ('used: {:.2f}s'.format(time()-start))
 
@@ -141,12 +142,12 @@ class PipelineLDA(object):
         # Converting list of documents (corpus) into Document Term Matrix using dictionary prepared above.
         start = time()
         self.doc_term_matrix = [self.dictionary.doc2bow(doc) for doc in self.prepared]
-        corpora.MmCorpus.serialize(folder+self.name+'_corpus.mm', self.doc_term_matrix)
+        corpora.MmCorpus.serialize(self.folder+self.name+'_corpus.mm', self.doc_term_matrix)
         print (len(self.doc_term_matrix))
         #print (doc_term_matrix[100])        
         print ('used: {:.2f}s'.format(time()-start))
         
-    def train(self, passes=1):
+    def train(self):
         num_topics = self.topics
         
         start = time()
@@ -155,14 +156,14 @@ class PipelineLDA(object):
 
         # Running and Trainign LDA model on the document term matrix.
         self.ldamodel = Lda(self.doc_term_matrix, num_topics=num_topics, id2word = self.dictionary, 
-                        passes=passes
+                        passes=self.passes
                       )
         
         print 'used: {:.2f}s'.format(time()-start)        
         
     def save(self):
         start = time()
-        self.ldamodel.save(folder+self.name+'_lda.model')
+        self.ldamodel.save(self.folder+self.name+'_lda.model')
         print 'used: {:.2f}s'.format(time()-start)
         
     def load(self, path):
