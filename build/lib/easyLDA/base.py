@@ -53,9 +53,10 @@ class PipelineLDA(object):
         
         global logging
         try:
-            mkdir('model')
+            os.mkdir('model')
         except:
             print 'model dir exists'
+            
         self.passes=passes
         self.folder = './model/'
         self.path = path
