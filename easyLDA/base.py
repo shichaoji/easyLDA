@@ -49,10 +49,12 @@ class PipelineLDA(object):
     
     """
     
-    def __init__(self, path):
+    def __init__(self, path, topics, grams):
         global logging
         self.path = path
-        self.name = self.path.split('.')[-2].split('/')[-1]
+        self.topics = topics
+        self.grams = grams
+        self.name = self.path.split('.')[-2].split('/')[-1]+'_topics_'+str(self.topics)+'_{}_gram'.format(self.grams)
         self.df =  pd.read_csv(self.path)
         print self.df.shape
         try:
@@ -88,8 +90,9 @@ class PipelineLDA(object):
             three = " ".join(lemmatize.lemmatize(i.decode('unicode_escape').encode('utf-8')) for i in one.split())
         return three
     
-    def split(self, n_gram=1):
+    def split(self):
         start = time()
+        n_gram = self.grams
 
         ap_text = self.series.apply(self.clean)
         ap_text_list = [i.split() for i in ap_text]
@@ -137,7 +140,8 @@ class PipelineLDA(object):
         #print (doc_term_matrix[100])        
         print ('used: {:.2f}s'.format(time()-start))
         
-    def train(self, num_topics=20, passes=1):
+    def train(self, passes=1):
+        num_topics = self.topics
         
         start = time()
         # Creating the object for LDA model using gensim library
@@ -195,15 +199,15 @@ def main():
     n_gram = int(str(raw_input('word topics or phase topics 1-word, 2-phase, 3-long phase? (1/2/3): ')).strip())
     
     print '1/7: load file'
-    lda = PipelineLDA(path)
+    lda = PipelineLDA(path, topics, n_grams)
     print '2/7: preprocessing docs'
-    lda.split(n_gram=n_gram)
+    lda.split()
     print '3/7: create doc dictionary'
     lda.create_dictionary()
     print '4/7: create doc corpus'
     lda.create_corpus()
     print '5/7: train LDA model'
-    lda.train(num_topics = topics)
+    lda.train()
     print '6/7: save trained LDA model'
     lda.save()
     print '7/7: visualize LDA model result'
