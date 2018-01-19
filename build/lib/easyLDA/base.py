@@ -217,4 +217,4 @@ def main():
     lda.visualize()
     print 'done'
     ender = time()-starter
-    print ('total used: {:.2f}s, {:.2f}mins'.format(ender, ender/60)
+    print ('total used: {:.2f}s, {:.2f}mins'.format(ender, ender/60))
