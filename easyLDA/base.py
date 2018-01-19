@@ -199,7 +199,8 @@ def main():
     n_gram = int(str(raw_input('word topics or phase topics 1-word, 2-phase, 3-long phase? (1/2/3): ')).strip())
     
     print '1/7: load file'
-    lda = PipelineLDA(path, topics, n_grams)
+    lda = PipelineLDA(path, topics, n_gram)
+    print lda
     print '2/7: preprocessing docs'
     lda.split()
     print '3/7: create doc dictionary'
@@ -211,5 +212,6 @@ def main():
     print '6/7: save trained LDA model'
     lda.save()
     print '7/7: visualize LDA model result'
+    print 'making Viz'
     lda.visualize()
     print 'done'
