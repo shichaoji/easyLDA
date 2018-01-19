@@ -36,7 +36,7 @@ import pyLDAvis.gensim
 
 from time import time
 import logging
-
+import os
 
 
 
@@ -50,7 +50,13 @@ class PipelineLDA(object):
     """
     
     def __init__(self, path, topics, grams):
+        
         global logging
+        try:
+            mkdir('model')
+        except:
+            print 'model dir exists'
+        self.folder = './model/'
         self.path = path
         self.topics = topics
         self.grams = grams
@@ -65,7 +71,7 @@ class PipelineLDA(object):
         self.stop = stopwords
         self.stop.update(stop)
         logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO,
-                            filename=self.name+'_log.log'.format(self.name),filemode='w')
+                            filename=folder+self.name+'_log.log'.format(self.name),filemode='w')
             
     def addstop(self, wordlist):
         self.stop.update(set(wordlist))
@@ -126,7 +132,7 @@ class PipelineLDA(object):
         # Creating the term dictionary of our courpus, where every unique term is assigned an index. dictionary = corpora.Dictionary(doc_clean)
         start = time()
         self.dictionary = corpora.Dictionary(self.prepared)
-        self.dictionary.save(self.name+'_dict.dict')
+        self.dictionary.save(folder+self.name+'_dict.dict')
         print (len(self.dictionary))
         print ('used: {:.2f}s'.format(time()-start))
 
@@ -135,7 +141,7 @@ class PipelineLDA(object):
         # Converting list of documents (corpus) into Document Term Matrix using dictionary prepared above.
         start = time()
         self.doc_term_matrix = [self.dictionary.doc2bow(doc) for doc in self.prepared]
-        corpora.MmCorpus.serialize(self.name+'_corpus.mm', self.doc_term_matrix)
+        corpora.MmCorpus.serialize(folder+self.name+'_corpus.mm', self.doc_term_matrix)
         print (len(self.doc_term_matrix))
         #print (doc_term_matrix[100])        
         print ('used: {:.2f}s'.format(time()-start))
@@ -156,7 +162,7 @@ class PipelineLDA(object):
         
     def save(self):
         start = time()
-        self.ldamodel.save(self.name+'_lda.model')
+        self.ldamodel.save(folder+self.name+'_lda.model')
         print 'used: {:.2f}s'.format(time()-start)
         
     def load(self, path):
