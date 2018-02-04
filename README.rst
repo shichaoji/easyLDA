@@ -60,11 +60,11 @@ the program will be starting to train
 
 -  in shell $ easyLDA
 
-.. image:: https://user-images.githubusercontent.com/20619704/35779521-49237200-099c-11e8-8cb2-ed916040a526.jpg
-   :width: 50%
-   :alt: Demo 2
-   :align: left
-   
+
+.. raw:: html
+
+    <img src="https://user-images.githubusercontent.com/20619704/35779521-49237200-099c-11e8-8cb2-ed916040a526.jpg" height="400px">
+    
 model result
 ~~~~~~~~~~~~
 
