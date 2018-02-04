@@ -74,18 +74,13 @@ models folder created by program contains the trained model
 xx.html file is the interactive visulization of the model result
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: https://user-images.githubusercontent.com/20619704/35779593-cfe800c0-099d-11e8-8db5-d3431f155496.jpg
-   :width: 50%
-   :alt: Demo 3
-   :align: left
-   
+
+.. raw:: html
+
+    <img src="https://user-images.githubusercontent.com/20619704/35779593-cfe800c0-099d-11e8-8db5-d3431f155496.jpg" height="400px">   
 visualization live example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code:: ipython2
-
-    from IPython.core.display import HTML
-    HTML(text)
 
 
 
