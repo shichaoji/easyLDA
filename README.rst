@@ -83,7 +83,7 @@ visualization live example
 
 
 .. raw:: html
- <img src="https://user-images.githubusercontent.com/20619704/35779593-cfe800c0-099d-11e8-8db5-d3431f155496.jpg" height="600px">   
-   <iframe src="https://s3.amazonaws.com/shichaoji/sample_text_topics_15_3_gram_viz.html"></iframe>
+
+   <img src="https://user-images.githubusercontent.com/20619704/35779593-cfe800c0-099d-11e8-8db5-d3431f155496.jpg" height="600px">   
 
    
