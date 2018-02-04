@@ -40,14 +40,10 @@ simple need a text file (.csv) with each row represents a document (a post, comm
 
 text file (csv) sample view
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. image:: https://user-images.githubusercontent.com/20619704/35779561-dba715a0-099c-11e8-8519-09d6164e63ae.jpg
-   :width: 100
-   :alt: Demo 1
-   :align: left
-   
+
 .. raw:: html
 
-    <img src="https://user-images.githubusercontent.com/20619704/35779561-dba715a0-099c-11e8-8519-09d6164e63ae.jpg" height="100px">
+    <img src="https://user-images.githubusercontent.com/20619704/35779561-dba715a0-099c-11e8-8519-09d6164e63ae.jpg" height="200px">
     
    
 easy to use, just in a shell window, type: easyLDA, then specify the location of the text document
