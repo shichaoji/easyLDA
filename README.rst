@@ -59,6 +59,11 @@ the program will be starting to train
 
 -  in shell $ easyLDA
 
+.. image:: https://user-images.githubusercontent.com/20619704/35779521-49237200-099c-11e8-8cb2-ed916040a526.jpg
+   :width: 50%
+   :alt: Demo 2
+   :align: left
+   
 model result
 ~~~~~~~~~~~~
 
@@ -68,6 +73,11 @@ models folder created by program contains the trained model
 xx.html file is the interactive visulization of the model result
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. image:: https://user-images.githubusercontent.com/20619704/35779593-cfe800c0-099d-11e8-8db5-d3431f155496.jpg
+   :width: 50%
+   :alt: Demo 3
+   :align: left
+   
 visualization live example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
