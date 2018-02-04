@@ -42,7 +42,6 @@ text file (csv) sample view
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: https://user-images.githubusercontent.com/20619704/35779561-dba715a0-099c-11e8-8519-09d6164e63ae.jpg
    :width: 50%
-   :height: 60%
    :alt: Demo 1
    :align: left
    
