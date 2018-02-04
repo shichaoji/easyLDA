@@ -84,8 +84,8 @@ visualization live example
 
 .. raw:: html
 
-    https://s3.amazonaws.com/shichaoji/sample_text_topics_15_3_gram_viz.html
-    <a href="http://shichaoji.com">My Blog</a>
+    
+    <h1><a href="http://shichaoji.com/2016/02/04/easylda-live-example/">live example</a></h1>
 
    
 
