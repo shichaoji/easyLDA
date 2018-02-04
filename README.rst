@@ -85,7 +85,7 @@ visualization live example
 .. raw:: html
 
     
-    <h1><a href="http://shichaoji.com/2016/02/04/easylda-live-example/" target="_blank">live example</a></h1>
+    <h1><a target="_blank" href="http://shichaoji.com/2016/02/04/easylda-live-example/">live example</a></h1>
 
    
 
