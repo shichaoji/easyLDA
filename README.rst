@@ -83,8 +83,7 @@ visualization live example
 
 .. raw:: html
 
-
-<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.css">
+   <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.css">
 
 
 <div id="ldavis_el12433140442019257808846793769"></div>
