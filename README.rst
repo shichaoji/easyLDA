@@ -47,7 +47,7 @@ text file (csv) sample view
    
 .. raw:: html
 
-    <img src="https://user-images.githubusercontent.com/20619704/35779561-dba715a0-099c-11e8-8519-09d6164e63ae.jpg" height="60%">
+    <img src="https://user-images.githubusercontent.com/20619704/35779561-dba715a0-099c-11e8-8519-09d6164e63ae.jpg" height="100px">
     
    
 easy to use, just in a shell window, type: easyLDA, then specify the location of the text document
