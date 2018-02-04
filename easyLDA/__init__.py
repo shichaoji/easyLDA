@@ -8,14 +8,14 @@
 #    print('python3')
     
 import nltk
-try:
-    from nltk.corpus import stopwords
-    from nltk.stem import wordnet
-    print 'stopword & wordnet data downloaded already'
-except:
-    print 'downloading nltk data'
-    nltk.download("stopwords")
-    nltk.download("wordnet")
+#try:
+#    from nltk.corpus import stopwords
+#    from nltk.stem import wordnet
+#    print 'stopword & wordnet data downloaded already'
+#except:
+print 'downloading nltk data'
+nltk.download("stopwords")
+nltk.download("wordnet")
 
     
 from .base import PipelineLDA
