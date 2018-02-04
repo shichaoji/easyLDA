@@ -82,4 +82,4 @@ visualization live example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
-   :file: https://s3.amazonaws.com/shichaoji/sample_text_topics_15_3_gram_viz.html
+   :url: https://s3.amazonaws.com/shichaoji/sample_text_topics_15_3_gram_viz.html
