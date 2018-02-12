@@ -10,6 +10,8 @@ try:
 except:
     print('python3')
     
+import warnings
+warnings.filterwarnings("ignore")
     
     
     
