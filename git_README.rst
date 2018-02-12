@@ -35,15 +35,16 @@ installation
 usage example
 ~~~~~~~~~~~~~
 
-simple need a text file (.csv/.txt) with each row represents a document (a post, comment, short article etc.), with only one column which is the text
+simple need a text file (.csv) with each row represents a document (a post, comment, short article etc.), with only one column which is the text
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 text file (csv) sample view
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. image:: https://user-images.githubusercontent.com/20619704/35779561-dba715a0-099c-11e8-8519-09d6164e63ae.jpg
-   :width: 60%
-   :alt: Demo 1
-   :align: left
+
+.. raw:: html
+
+    <img src="https://user-images.githubusercontent.com/20619704/35779561-dba715a0-099c-11e8-8519-09d6164e63ae.jpg" height="400px">
+    
    
 easy to use, just in a shell window, type: easyLDA, then specify the location of the text document
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -59,11 +60,11 @@ the program will be starting to train
 
 -  in shell $ easyLDA
 
-.. image:: https://user-images.githubusercontent.com/20619704/35779521-49237200-099c-11e8-8cb2-ed916040a526.jpg
-   :width: 70%
-   :alt: Demo 2
-   :align: left
-   
+
+.. raw:: html
+
+    <img src="https://user-images.githubusercontent.com/20619704/35779521-49237200-099c-11e8-8cb2-ed916040a526.jpg" height="400px">
+    
 model result
 ~~~~~~~~~~~~
 
@@ -73,15 +74,20 @@ models folder created by program contains the trained model
 xx.html file is the interactive visulization of the model result
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: https://user-images.githubusercontent.com/20619704/35779593-cfe800c0-099d-11e8-8db5-d3431f155496.jpg
-   :width: 60%
-   :alt: Demo 3
-   :align: left
-   
+
+.. raw:: html
+
+    <img src="https://user-images.githubusercontent.com/20619704/35779593-cfe800c0-099d-11e8-8db5-d3431f155496.jpg" height="600px">   
+
 visualization live example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-http://shichaoji.com/2016/02/04/easylda-live-example/
+.. raw:: html
 
+    
+    <h1><a href="http://shichaoji.com/2016/02/04/easylda-live-example/" target="_blank">live example</a></h1>
 
+   
+
+   

@@ -44,7 +44,7 @@ import os
 class PipelineLDA(object):
     
     """
-    input a csv file with one colume (optional column name: 'text')
+    input a csv/txt file with one colume (optional column name: 'text')
     every row of that csv should be one document   
     
     """
@@ -202,7 +202,7 @@ class PipelineLDA(object):
         
 
 def main():
-    path = raw_input('the PATH of the csv file with just one column and each row should be one document: ')
+    path = raw_input('the PATH of the csv/txt file with just one column and each row should be one document: ')
     topics = int(str(raw_input('how many topics would you like to fit in your model?: ')).strip())
     n_gram = int(str(raw_input('word topics or phase topics 1-word, 2-phase, 3-long phase? (1/2/3): ')).strip())
     starter = time()
