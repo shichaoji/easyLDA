@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: easyLDA
-Version: 0.2.7.7
+Version: 0.2.8.0
 Summary: easily bult LDA Topic Models with just a list of docs (e.g. a list of twitter posts in CSV/TXT
 Home-page: https://github.com/shichaoji/easyLDA
 Author: Shichao(Richard) Ji
@@ -14,8 +14,8 @@ Description:
         
         |PyPI version|
         
-        easyLDA is a library that easily build LDA Topic Models with just a list of docs (e.g. a list of twitter posts in CSV/TXT)
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        easyLDA is a library that easily build LDA Topic Models with just a list of docs (e.g. a list of twitter posts in CSV/ TXT)
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         
         github: https://github.com/shichaoji/easyLDA
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -45,8 +45,8 @@ Description:
         usage example
         ~~~~~~~~~~~~~
         
-        simple need a text file (.csv/.txt) with each row represents a document (a post, comment, short article etc.), with only one column which is the text
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        simple need a text file (.csv/ .txt) with each row represents a document (a post, comment, short article etc.), with only one column which is the text
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
         
         text file (csv) sample view
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
