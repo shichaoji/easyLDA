@@ -24,12 +24,12 @@ class Install(_install):
 
 
 
-with open(os.path.join(_HERE, 'README.rst'),'r+') as fh:
+with open(os.path.join(_HERE, 'git_README.rst'),'r+') as fh:
     long_description = fh.read()
 
 setup(
     name = "easyLDA",
-    version = "0.2.8.1",
+    version = "0.2.8.2",
     description = "easily bult LDA Topic Models with just a list of docs (e.g. a list of twitter posts in CSV/TXT",
     long_description = long_description,
     author = "Shichao(Richard) Ji",
