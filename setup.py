@@ -29,7 +29,7 @@ with open(os.path.join(_HERE, 'README.rst'),'r+') as fh:
 
 setup(
     name = "easyLDA",
-    version = "0.2.8.0",
+    version = "0.2.8.1",
     description = "easily bult LDA Topic Models with just a list of docs (e.g. a list of twitter posts in CSV/TXT",
     long_description = long_description,
     author = "Shichao(Richard) Ji",
@@ -46,7 +46,7 @@ setup(
     install_requires=[
         'nltk>=3.0',
         'gensim>=3.0',
-        'pyLDAvisi>=2.0',
+        'pyLDAvis>=2.0',
       ],
     setup_requires=['nltk'],
     entry_points={

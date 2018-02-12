@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: easyLDA
-Version: 0.2.8.0
+Version: 0.2.8.1
 Summary: easily bult LDA Topic Models with just a list of docs (e.g. a list of twitter posts in CSV/TXT
 Home-page: https://github.com/shichaoji/easyLDA
 Author: Shichao(Richard) Ji
@@ -10,15 +10,15 @@ Download-URL: https://github.com/shichaoji/easyLDA/archive/0.1.tar.gz
 Description-Content-Type: UNKNOWN
 Description: 
         easyLDA
-        -------
+        --------
         
         |PyPI version|
         
         easyLDA is a library that easily build LDA Topic Models with just a list of docs (e.g. a list of twitter posts in CSV/ TXT)
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         
         github: https://github.com/shichaoji/easyLDA
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
         
         -  If you have a collection of documents, and what to explore the
            relationship & topics of the docs, easyLDA is a very handy library to
