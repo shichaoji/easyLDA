@@ -204,9 +204,17 @@ class PipelineLDA(object):
         
 
 def main():
-    path = raw_input('the PATH of the csv/txt file with just one column and each row should be one document: ')
-    topics = int(str(raw_input('how many topics would you like to fit in your model?: ')).strip())
-    n_gram = int(str(raw_input('word topics or phase topics 1-word, 2-phase, 3-long phase? (1/2/3): ')).strip())
+    try:
+        path
+        flag=0
+    except:
+        flag=1
+    if flag:
+        path = raw_input('the PATH of the csv/txt file with just one column and each row should be one document: ')
+        topics = int(str(raw_input('how many topics would you like to fit in your model?: ')).strip())
+        n_gram = int(str(raw_input('word topics or phase topics 1-word, 2-phase, 3-long phase? (1/2/3): ')).strip())
+    else:
+        print 'use variable exists ---:)'
     starter = time()
     
     print '1/7: load file'

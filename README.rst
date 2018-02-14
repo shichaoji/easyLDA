@@ -1,14 +1,14 @@
 
 easyLDA
---------
+-------
 
 |PyPI version|
 
-easyLDA is a library that easily build LDA Topic Models with just a list of docs (e.g. a list of twitter posts in CSV/ TXT)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+easyLDA is a library that easily build LDA Topic Models with just a list of docs (e.g. a list of twitter posts in CSV/TXT)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 github: https://github.com/shichaoji/easyLDA
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  If you have a collection of documents, and what to explore the
    relationship & topics of the docs, easyLDA is a very handy library to
@@ -35,8 +35,8 @@ installation
 usage example
 ~~~~~~~~~~~~~
 
-simple need a text file (.csv/ .txt) with each row represents a document (a post, comment, short article etc.), with only one column which is the text
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+simple need a text file (.csv) with each row represents a document (a post, comment, short article etc.), with only one column which is the text
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 text file (csv) sample view
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -84,4 +84,9 @@ visualization live example
 
 http://shichaoji.com/2016/02/04/easylda-live-example/
 
-
+static pic result
+~~~~~~~~~~~~~~~~~~~~~~
+.. image:: https://user-images.githubusercontent.com/20619704/36183178-386dfde8-10fb-11e8-88f0-9eb51b94bc27.jpg
+   :width: 60%
+   :alt: Demo 4
+   :align: left
