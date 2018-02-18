@@ -85,7 +85,7 @@ visualization live example
 http://shichaoji.com/2016/02/04/easylda-live-example/
 
 static pic result
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 .. image:: https://user-images.githubusercontent.com/20619704/36183178-386dfde8-10fb-11e8-88f0-9eb51b94bc27.jpg
    :width: 60%
    :alt: Demo 4
